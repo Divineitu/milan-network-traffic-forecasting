@@ -1,0 +1,9 @@
+square_id,model,MAE,RMSE,MAPE,fit_seconds,rationale
+5161,"LSTM(level, window 144, hidden 64, layers 1, dropout 0.0, lr 0.001)",127.41,189.33,11.18,141.6,stage 1: predict the level x(t+1) directly (the original formulation)
+5161,"LSTM(delta, window 144, hidden 64, layers 1, dropout 0.0, lr 0.001)",103.27,153.89,9.03,111.6,"stage 1: predict the change x(t+1)-x(t), anchored on persistence"
+5161,"LSTM(delta, window 144, hidden 32, layers 1, dropout 0.0, lr 0.001)",103.66,154.9,8.85,74.8,stage 2 (delta): capacity down: is 64 units more than the data supports?
+5161,"LSTM(delta, window 144, hidden 128, layers 1, dropout 0.0, lr 0.001)",103.06,155.61,8.56,202.7,stage 2 (delta): capacity up: does more width still help?
+5161,"LSTM(delta, window 144, hidden 64, layers 2, dropout 0.2, lr 0.001)",99.21,148.52,8.8,823.6,"stage 2 (delta): depth instead of width, with dropout against overfitting"
+5161,"LSTM(delta, window 144, hidden 64, layers 1, dropout 0.0, lr 0.003)",98.32,149.05,7.98,223.6,stage 2 (delta): faster learning rate: better convergence within budget?
+5161,"LSTM(delta, window 144, hidden 64, layers 1, dropout 0.0, lr 0.0003)",104.99,159.59,8.56,249.9,stage 2 (delta): slower learning rate: is the default overshooting?
+5161,"LSTM(delta, window 36, hidden 64, layers 1, dropout 0.0, lr 0.001)",104.79,159.05,8.38,65.9,stage 2 (delta): shorter window (6 h): the PACF says recent steps dominate

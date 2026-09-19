@@ -1,0 +1,4 @@
+series,adf_stat,adf_p,adf_says,kpss_stat,kpss_p,kpss_says
+raw,-19.031898946998258,0.0,stationary,0.2367231643256935,0.1,stationary
+first difference (lag 1),-15.160392504531215,6.603288820464604e-28,stationary,0.003336589100091422,0.1,stationary
+seasonal difference (lag 144),-11.83301594488286,7.909209913490359e-22,stationary,0.06937813393162423,0.1,stationary
