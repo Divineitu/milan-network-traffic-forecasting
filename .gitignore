@@ -22,3 +22,5 @@ PLAN.md
 PROGRESS.md
 notes/
 report/outline.md
+report/*.docx
+report/preview.pdf
