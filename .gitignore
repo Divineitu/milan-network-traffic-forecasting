@@ -1,0 +1,24 @@
+# Raw and processed data are too large for git: re-create them with src/data/download.py
+/data/
+*.part
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+.ipynb_checkpoints/
+
+# Model checkpoints
+*.pt
+*.pkl
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+
+# Personal working documents (not part of the submitted code)
+PLAN.md
+PROGRESS.md
+notes/
+report/outline.md
