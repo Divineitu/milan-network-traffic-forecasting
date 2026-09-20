@@ -16,11 +16,3 @@ __pycache__/
 .DS_Store
 Thumbs.db
 .vscode/
-
-# Personal working documents (not part of the submitted code)
-PLAN.md
-PROGRESS.md
-notes/
-report/outline.md
-report/*.docx
-report/preview.pdf
