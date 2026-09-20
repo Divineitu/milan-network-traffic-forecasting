@@ -90,7 +90,7 @@ Windows 11, CPU only, Python 3.14, PyTorch 2.13 (CPU build).
 
 ## 6. Data licence and attribution
 
-The dataset is released under the **ODbL 1.0** licence. Any use must be accompanied by a link
+so note this, that the dataset is released under the **ODbL 1.0** licence. Any use must be accompanied by a link
 reading "from BigDataChallenge contest"
 (http://www.telecomitalia.com/tit/en/bigdatachallenge.html).
 
@@ -98,9 +98,5 @@ Dataset: G. Barlacchi *et al.*, "A multi-source dataset of urban life in the cit
 the Province of Trentino," *Sci. Data*, vol. 2, 150055, 2015, doi: 10.1038/sdata.2015.55.
 Files: doi:10.7910/DVN/EGZHFV (telecom activity) and doi:10.7910/DVN/QJWLFU (Milan grid).
 
-The raw and processed data are **not** committed to this repository; re-create them with steps 2–3.
+The raw and processed data are **not** committed to this repository; just re-create them with steps 2–3.
 
-## 7. Report and video
-
-* Report: `report/` (PDF)
-* Video: *link to be added*
