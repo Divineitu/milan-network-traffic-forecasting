@@ -71,7 +71,6 @@ src/
   experiments/ tune.py       validation-week hyperparameter experiments
                run_final.py  test-week evaluation, figures, metric and timing tables
 experiments/log.md           every experiment with its reasoning
-notes/                       working notes: related work, defence notes
 figures/                     all generated figures
 ```
 
